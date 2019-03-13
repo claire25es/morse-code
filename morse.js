@@ -28,18 +28,25 @@ var alphabet = {
   z: '--..'
 };
 
-var result = Object.keys(alphabet).map(function(key) {
-  return [Number(key), alphabet[key]];
-}); 
-
-console.log(result);
-
 var firstWord = "hello world";
 var secondWord = "we love javascript";
 
-for (var result = 0; result < firstWord.length; result++) {
-  console.log(firstWord[result]);
-}
+/* Task is to get the strings of firstWord and secondWord to
+be printed in morse rather than in letters in the console */
 
+/* Split strings into array */
+var firstWordArray = firstWord.split("");
+var secondWordArray = secondWord.split("");
+
+/* Create a for loop */
+for (var i=0; i<firstWordArray.length; i++) {
+  console.log(alphabet[firstWordArray[i]]);
+};
+
+console.log(" ")
+
+for (var i=0; i<secondWordArray.length; i++) {
+  console.log(alphabet[secondWordArray[i]]);
+};
 
 
