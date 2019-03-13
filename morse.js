@@ -27,3 +27,19 @@ var alphabet = {
   y: '-.--',
   z: '--..'
 };
+
+var result = Object.keys(alphabet).map(function(key) {
+  return [Number(key), alphabet[key]];
+}); 
+
+console.log(result);
+
+var firstWord = "hello world";
+var secondWord = "we love javascript";
+
+for (var result = 0; result < firstWord.length; result++) {
+  console.log(firstWord[result]);
+}
+
+
+
